@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pmZ-Ui-ufA">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Demo-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FTIBInspectable" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyX-Bt-xOf" customClass="FTView" customModule="FTIBInspectable" customModuleProvider="target">
-                                <rect key="frame" x="40" y="28" width="240" height="200"/>
+                                <rect key="frame" x="40" y="72" width="240" height="200"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="6Fg-WH-1AL"/>
@@ -29,18 +29,110 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xU5-OY-Icx">
+                                <rect key="frame" x="20" y="458" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="wVu-4n-nvY" kind="popoverPresentation" popoverAnchorView="xU5-OY-Icx" id="Bni-em-5cY">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bu-wj-EZB">
+                                <rect key="frame" x="254" y="518" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="wVu-4n-nvY" kind="popoverPresentation" popoverAnchorView="0bu-wj-EZB" id="pG6-zi-tXF">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xU5-OY-Icx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="8Zl-2s-h34"/>
                             <constraint firstItem="hyX-Bt-xOf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="8g0-Z6-KE3"/>
                             <constraint firstAttribute="trailing" secondItem="hyX-Bt-xOf" secondAttribute="trailing" constant="40" id="EZ5-zO-S7t"/>
+                            <constraint firstAttribute="trailing" secondItem="0bu-wj-EZB" secondAttribute="trailing" constant="20" id="NZd-QD-Es3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0bu-wj-EZB" secondAttribute="bottom" constant="20" id="OqZ-pr-a26"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xU5-OY-Icx" secondAttribute="bottom" constant="80" id="f3N-iF-P70"/>
                             <constraint firstItem="hyX-Bt-xOf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="unq-bo-a7z"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Demo" id="7jo-ML-V8x">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="P2l-Lz-Vd8">
+                            <connections>
+                                <segue destination="wVu-4n-nvY" kind="popoverPresentation" identifier="PopOver" popoverAnchorBarButtonItem="P2l-Lz-Vd8" id="odj-HR-IWz">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="429" y="-303"/>
+        </scene>
+        <!--Popover View Controller-->
+        <scene sceneID="pQ3-ND-9cY">
+            <objects>
+                <viewController id="wVu-4n-nvY" customClass="FTPopoverViewController" customModule="FTIBInspectable" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sVz-rM-gWE"/>
+                        <viewControllerLayoutGuide type="bottom" id="9tb-aM-qnX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vpa-gp-oqu">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3h-qt-ySJ">
+                                <rect key="frame" x="20" y="40" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yAS-pJ-U4i"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="O3h-qt-ySJ" firstAttribute="leading" secondItem="Vpa-gp-oqu" secondAttribute="leading" constant="20" id="Klp-QI-n4A"/>
+                            <constraint firstItem="O3h-qt-ySJ" firstAttribute="top" secondItem="sVz-rM-gWE" secondAttribute="bottom" constant="20" id="gid-g3-03L"/>
+                            <constraint firstAttribute="trailing" secondItem="O3h-qt-ySJ" secondAttribute="trailing" constant="20" id="wFZ-ac-niH"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="240" height="240"/>
+                    <keyCommands/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="240" height="240"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84s-Yv-FbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805" y="-303"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Jr-hp-QhY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pmZ-Ui-ufA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="McH-ya-6Lz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Sqr-ks-uA1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIP-sY-AJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="-303"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pG6-zi-tXF"/>
+    </inferredMetricsTieBreakers>
 </document>

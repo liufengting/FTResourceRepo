@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0F257B1D64467800A33222 /* FTPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F257A1D64467800A33222 /* FTPopoverViewController.swift */; };
 		5A23CEBC1D6212F700971A0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A23CEBB1D6212F700971A0C /* AppDelegate.swift */; };
 		5A23CEBE1D6212F700971A0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A23CEBD1D6212F700971A0C /* ViewController.swift */; };
 		5A23CEC11D6212F800971A0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A23CEBF1D6212F800971A0C /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A0F257A1D64467800A33222 /* FTPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPopoverViewController.swift; sourceTree = "<group>"; };
 		5A23CEB81D6212F700971A0C /* FTIBInspectable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTIBInspectable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A23CEBB1D6212F700971A0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A23CEBD1D6212F700971A0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				5A23CEBB1D6212F700971A0C /* AppDelegate.swift */,
 				5A23CEBD1D6212F700971A0C /* ViewController.swift */,
 				5A23CEE91D62131F00971A0C /* FTView.swift */,
+				5A0F257A1D64467800A33222 /* FTPopoverViewController.swift */,
 				5A23CEBF1D6212F800971A0C /* Main.storyboard */,
 				5A23CEC21D6212F800971A0C /* Assets.xcassets */,
 				5A23CEC41D6212F800971A0C /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				5A23CEEA1D62131F00971A0C /* FTView.swift in Sources */,
 				5A23CEBE1D6212F700971A0C /* ViewController.swift in Sources */,
 				5A23CEBC1D6212F700971A0C /* AppDelegate.swift in Sources */,
+				5A0F257B1D64467800A33222 /* FTPopoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +490,7 @@
 				5A23CEE21D6212F800971A0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A23CEE31D6212F800971A0C /* Build configuration list for PBXNativeTarget "FTIBInspectableTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				5A23CEE51D6212F800971A0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A23CEE61D6212F800971A0C /* Build configuration list for PBXNativeTarget "FTIBInspectableUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				5A23CEE81D6212F800971A0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
