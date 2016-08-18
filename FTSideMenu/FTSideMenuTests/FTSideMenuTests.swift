@@ -1,15 +1,15 @@
 //
-//  FTIBInspectableTests.swift
-//  FTIBInspectableTests
+//  FTSideMenuTests.swift
+//  FTSideMenuTests
 //
-//  Created by liufengting https://github.com/liufengting on 16/8/15.
+//  Created by liufengting https://github.com/liufengting on 16/8/18.
 //  Copyright © 2016年 liufengting. All rights reserved.
 //
 
 import XCTest
-@testable import FTIBInspectable
+@testable import FTSideMenu
 
-class FTIBInspectableTests: XCTestCase {
+class FTSideMenuTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
