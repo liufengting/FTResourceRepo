@@ -17,7 +17,20 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+//        [UIView beginAnimations: @“Fade Out” context:nil];
+//        // wait for time before begin
+//        [UIView setAnimationDelay:wait];
+//        // druation of animation
+//        [UIView setAnimationDuration:duration];
+//        viewToDissolve.alpha = 0.0;
+//        [UIView commitAnimations];
+
+//        UIView.beginAnimations("Fade out", context: nil)
+        
+        
+        
+        
     }
 
 

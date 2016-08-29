@@ -482,6 +482,7 @@
 				5AB386F21D656CE500D7EFE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AB386F31D656CE500D7EFE0 /* Build configuration list for PBXNativeTarget "FTSideMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +491,7 @@
 				5AB386F51D656CE500D7EFE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AB386F61D656CE500D7EFE0 /* Build configuration list for PBXNativeTarget "FTSideMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +500,7 @@
 				5AB386F81D656CE500D7EFE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
