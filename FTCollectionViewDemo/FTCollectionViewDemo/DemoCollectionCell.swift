@@ -10,7 +10,7 @@ import UIKit
 
 class DemoCollectionCell: UICollectionViewCell {
     
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     
 

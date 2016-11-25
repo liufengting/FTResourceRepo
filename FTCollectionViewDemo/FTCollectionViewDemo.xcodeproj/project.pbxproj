@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A7301711DD440A3005B33A8 /* AssetTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A73016F1DD440A3005B33A8 /* AssetTransitionController.swift */; };
+		2A7301721DD440A3005B33A8 /* AssetTransitionDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7301701DD440A3005B33A8 /* AssetTransitionDriver.swift */; };
+		2A7301741DD440BB005B33A8 /* DetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7301731DD440BB005B33A8 /* DetialViewController.swift */; };
+		2A7301761DD4425F005B33A8 /* AvatarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7301751DD4425F005B33A8 /* AvatarImage.swift */; };
 		5AA31B011D61E62D0080BD56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31B001D61E62D0080BD56 /* AppDelegate.swift */; };
 		5AA31B031D61E62D0080BD56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA31B021D61E62D0080BD56 /* ViewController.swift */; };
 		5AA31B061D61E62D0080BD56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA31B041D61E62D0080BD56 /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A73016F1DD440A3005B33A8 /* AssetTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetTransitionController.swift; sourceTree = "<group>"; };
+		2A7301701DD440A3005B33A8 /* AssetTransitionDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetTransitionDriver.swift; sourceTree = "<group>"; };
+		2A7301731DD440BB005B33A8 /* DetialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetialViewController.swift; sourceTree = "<group>"; };
+		2A7301751DD4425F005B33A8 /* AvatarImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImage.swift; sourceTree = "<group>"; };
 		5AA31AFD1D61E62D0080BD56 /* FTCollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTCollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA31B001D61E62D0080BD56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AA31B021D61E62D0080BD56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A73016D1DD44079005B33A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5AA31B2E1D61E7EB0080BD56 /* DemoCollectionCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2A73016E1DD4408A005B33A8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2A7301751DD4425F005B33A8 /* AvatarImage.swift */,
+				2A73016F1DD440A3005B33A8 /* AssetTransitionController.swift */,
+				2A7301701DD440A3005B33A8 /* AssetTransitionDriver.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		5AA31AF41D61E62D0080BD56 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +127,9 @@
 			children = (
 				5AA31B001D61E62D0080BD56 /* AppDelegate.swift */,
 				5AA31B021D61E62D0080BD56 /* ViewController.swift */,
-				5AA31B2E1D61E7EB0080BD56 /* DemoCollectionCell.swift */,
+				2A7301731DD440BB005B33A8 /* DetialViewController.swift */,
+				2A73016E1DD4408A005B33A8 /* Source */,
+				2A73016D1DD44079005B33A8 /* View */,
 				5AA31B041D61E62D0080BD56 /* Main.storyboard */,
 				5AA31B071D61E62D0080BD56 /* Assets.xcassets */,
 				5AA31B091D61E62D0080BD56 /* LaunchScreen.storyboard */,
@@ -196,13 +224,16 @@
 				TargetAttributes = {
 					5AA31AFC1D61E62D0080BD56 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 					5AA31B101D61E62D0080BD56 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 5AA31AFC1D61E62D0080BD56;
 					};
 					5AA31B1B1D61E62D0080BD56 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 5AA31AFC1D61E62D0080BD56;
 					};
 				};
@@ -260,8 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA31B031D61E62D0080BD56 /* ViewController.swift in Sources */,
+				2A7301761DD4425F005B33A8 /* AvatarImage.swift in Sources */,
+				2A7301741DD440BB005B33A8 /* DetialViewController.swift in Sources */,
 				5AA31B011D61E62D0080BD56 /* AppDelegate.swift in Sources */,
+				2A7301711DD440A3005B33A8 /* AssetTransitionController.swift in Sources */,
 				5AA31B2F1D61E7EB0080BD56 /* DemoCollectionCell.swift in Sources */,
+				2A7301721DD440A3005B33A8 /* AssetTransitionDriver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,9 +439,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FTCollectionViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTCollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -415,9 +452,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FTCollectionViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTCollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -429,6 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTCollectionViewDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTCollectionViewDemo.app/FTCollectionViewDemo";
 			};
 			name = Debug;
@@ -441,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTCollectionViewDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTCollectionViewDemo.app/FTCollectionViewDemo";
 			};
 			name = Release;
@@ -452,6 +493,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTCollectionViewDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FTCollectionViewDemo;
 			};
 			name = Debug;
@@ -463,6 +505,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTCollectionViewDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FTCollectionViewDemo;
 			};
 			name = Release;
@@ -486,6 +529,7 @@
 				5AA31B271D61E62D0080BD56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AA31B281D61E62D0080BD56 /* Build configuration list for PBXNativeTarget "FTCollectionViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +538,7 @@
 				5AA31B2A1D61E62D0080BD56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AA31B2B1D61E62D0080BD56 /* Build configuration list for PBXNativeTarget "FTCollectionViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +547,7 @@
 				5AA31B2D1D61E62D0080BD56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
