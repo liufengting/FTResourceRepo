@@ -43,7 +43,7 @@
                     <navigationItem key="navigationItem" title="Root" id="qzX-cT-gtA"/>
                     <connections>
                         <outlet property="sourceButton" destination="59K-c2-9e5" id="Xuw-TA-5E3"/>
-                        <segue destination="W6i-pS-AMT" kind="presentation" id="X9f-S4-WA5"/>
+                        <segue destination="W6i-pS-AMT" kind="presentation" identifier="pushToDetial" id="X9f-S4-WA5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
