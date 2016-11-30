@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="1641" y="-331"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Root Navigation Controller-->
         <scene sceneID="Qj2-nX-Nut">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Prg-RZ-ihu" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Prg-RZ-ihu" customClass="RootNavigationController" customModule="FTZoomTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ggS-XV-DC7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
