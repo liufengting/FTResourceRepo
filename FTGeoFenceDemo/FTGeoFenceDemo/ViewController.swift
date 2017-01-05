@@ -39,15 +39,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBAction func startButtonAction(_ sender: UIButton) {
         
+        for region in self.locationManager.monitoredRegions {
+            self.locationManager.stopMonitoring(for: region)
+        }
+        
+        
         self.startlocating()
         
-        let region : CLCircularRegion = CLCircularRegion(center: targetCoordinate, radius: 50, identifier: "Just Testing")
+        let region : CLCircularRegion = CLCircularRegion(center: targetCoordinate, radius: 50, identifier: "Testing")
         region.notifyOnEntry = true
         region.notifyOnExit = true;
         self.startMonitoringRegin(region: region)
 
         
-        let region2 : CLCircularRegion = CLCircularRegion(center: CLLocationCoordinate2DMake(31.49, 120.3679), radius: 50, identifier: "Just Testing2222")
+        let region2 : CLCircularRegion = CLCircularRegion(center: CLLocationCoordinate2DMake(31.49, 120.3679), radius: 50, identifier: "Testing2222")
         region2.notifyOnEntry = true
         region2.notifyOnExit = true;
         self.startMonitoringRegin(region: region2)
@@ -71,7 +76,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     public func startlocating(){
         
-        self.locationManager.startUpdatingLocation()
+//        self.locationManager.startUpdatingLocation()
         
     }
     
